@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Doa_Harian"
+    android:orientation="vertical"
+    android:background="@drawable/bg_menu_doa">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="45dp">
+
+            <TextView
+                android:id="@+id/menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Menu "
+                android:textColor="#484B48"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:text="Doa Harian"
+                android:textColor="#0E6411"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_doa_harian" />
+
+        </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="1">
+
+            //CV_Sebelum_Makan
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Sebelum_Makan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_sebelum_makan"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Sebelum Makan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Sesudah_Makan
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Sesudah_Makan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_sesudah_makan"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Sesudah Makan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Lupa_Doa_Makan
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Lupa_DoaMakan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:background="#fff"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_lupa_doamakan"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Ketika Lupa Membaca Doa Sebelum Makan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Masuk_KamarMandi
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Masuk_Kmr_Mandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_masuk_kmar_mandi"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Masuk Kamar Mandi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Keluar_KamarMandi
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Keluar_Kmr_Mandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_keluar_kmar_mandi"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Keluar Kamar Mandi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Sebelum_Tidur
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Sebelum_Tidur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_sebelum_tidur"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Sebelum Tidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Bangun_Tidur
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Bangun_Tidur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_bangun_tidur"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Bangun Tidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Susah_Tidur
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Susah_Tidur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_susah_tidur"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Ketika Susah Tidur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Saat_Mimpi_Buruk
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Saat_Mimpi_Buruk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_mimpi_buruk"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Saat Mimpi Buruk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Ampunan_Orangtua
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Ampunan_Orangtua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_orang_tua"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Untuk Kedua Orang Tua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Saat_Bercermin
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Saat_Bercermin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_bercermin"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Saat Bercermin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Memakai_Pakaian
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Memakai_Pakaian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_memakai_pakaian"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Memakai Pakaian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Memakai_PakaianBaru
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Memakai_PakaianBaru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_mmakai_pkaianbaru"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Memakai Pakaian Baru"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Melepas_Pakaian
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Melepas_Pakaian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_melepas_pakaian"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Melepas Pakaian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Masuk_Rumah
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Masuk_Rumah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_masuk_rumah"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Masuk Rumah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Keluar_Rumah
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Keluar_Rumah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_keluar_rumah"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Keluar Rumah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Ketika_Bersedekah
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Ketika_Bersedekah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_bersedekah"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Ketika Bersedekah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Dijauhkan_Lupa
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Dijauhkan_Lupa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_dijauhkan_lupa"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Dijauhkan dari Sifat Lupa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Masuk_Masjid
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Masuk_Masjid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_masuk_masjid"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Masuk Masjid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Keluar_Masjid
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Keluar_Masjid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_keluar_masjid"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Keluar Masjid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Ketika_Bersin
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Ketika_Bersin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_ketika_bersin"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Ketika Bersin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Akan_Belajar
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Akan_Belajar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_akan_belajar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Sebelum Belajar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Selesai_Belajar
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Selesai_Belajar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_selesai_belajar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Selesai Belajar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Naik_Kendaraan
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Naik_Kendaraan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_naik_kendaraan"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Naik Kendaraan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            //CV_Turun_Hujan
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CV_Turun_Hujan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/d_turun_hujan"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp" />
+                    <TextView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginStart="12dp"
+                        android:textSize="21sp"
+                        android:textStyle="bold"
+                        android:text="Doa Ketika Turun Hujan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+    </ScrollView>
+
+</LinearLayout>

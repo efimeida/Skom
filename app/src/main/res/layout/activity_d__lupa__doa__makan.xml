@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroun_doa"
+    android:fitsSystemWindows="true"
+    tools:context=".D_Lupa_Doa_Makan">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bg_LupaDoaMakan"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/d_lupa_doamakan"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <TextView
+                android:id="@+id/mydashboard2"
+                android:layout_below="@id/bg_LupaDoaMakan"
+                android:text="Doa Ketika Lupa Membaca Doa Sebelum Makan"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="24sp"
+                android:textColor="#0E6411"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="15dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="1dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="15dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="1dp"
+                app:cardBackgroundColor="#fff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#C8E429"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="بِسْمِ اللهِ فِىِ أَوَّلِهِ وَآخِرِهِِ"
+                        android:textAlignment="gravity"
+                        android:textColor="#0A0A0A"
+                        android:textSize="35sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="15dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="1dp"
+                app:cardBackgroundColor="#fff">
+
+                <LinearLayout
+                    android:background="#E7E431"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="23sp"
+                        android:textAlignment="gravity"
+                        android:textColor="#0A0A0A"
+                        android:textStyle="bold"
+                        android:text="Bismillaahi fii awwalihi wa aakhirihi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="0"
+                android:layout_rowWeight="0"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="15dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="1dp"
+                app:cardBackgroundColor="#fff">
+
+                <LinearLayout
+                    android:background="#E7FC52"
+                    android:orientation="horizontal"
+                    android:padding="1dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Artinya : “Dengan menyebut asma Allah pada permulaan dan akhirnya.”"
+                        android:textAlignment="gravity"
+                        android:textColor="#0A0A0A"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="center">
+            <ImageButton
+                android:id="@+id/play"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:layout_x="134dp"
+                android:layout_y="18dp"
+                android:src="@drawable/play"
+                android:scaleType="fitXY"/>
+            <ImageButton
+                android:id="@+id/pause"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:layout_x="134dp"
+                android:layout_y="18dp"
+                android:src="@drawable/pause"
+                android:scaleType="fitXY"/>
+            <ImageButton
+                android:id="@+id/stop"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:layout_x="134dp"
+                android:layout_y="18dp"
+                android:src="@drawable/stop"
+                android:scaleType="fitXY"/>
+        </GridLayout>
+    </LinearLayout>
+
+</ScrollView>

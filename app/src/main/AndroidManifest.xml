@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.appdoaharian">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Rukun_Iman" />
+        <activity android:name=".QuizHome" />
+        <activity android:name=".Info_Developer" />
+        <activity android:name=".Info_Aplikasi" />
+        <activity android:name=".Ashus_Item_Listview" />
+        <activity android:name=".Asmaul_Husna" />
+        <activity android:name=".Rukun_Islam" />
+        <activity android:name=".D_Naik_Kendaraan" />
+        <activity android:name=".Ayat_Kursi" />
+        <activity android:name=".Tambah_Wawasan" />
+        <activity android:name=".Tentang_Doa" />
+        <activity android:name=".D_Turun_Hujan" />
+        <activity android:name=".D_Selesai_Belajar" />
+        <activity android:name=".D_Akan_Belajar" />
+        <activity android:name=".D_Bersin" />
+        <activity android:name=".D_Keluar_Masjid" />
+        <activity android:name=".D_Masuk_Masjid" />
+        <activity android:name=".D_Dijauhkan_Lupa" />
+        <activity android:name=".D_Bersedekah" />
+        <activity android:name=".D_Keluar_Rumah" />
+        <activity android:name=".D_Masuk_Rumah" />
+        <activity android:name=".D_Memakai_Pkaian" />
+        <activity android:name=".D_Melepas_Pkaian" />
+        <activity android:name=".D_Mmkai_PkaianBaru" />
+        <activity android:name=".D_Bercermin" />
+        <activity android:name=".D_Ampunan_Orang_Tua" />
+        <activity android:name=".D_Saat_Mimpi_Buruk" />
+        <activity android:name=".D_Susah_Tidur" />
+        <activity android:name=".D_Bangun_Tidur" />
+        <activity android:name=".D_Sebelum_Tidur" />
+        <activity android:name=".D_Keluar_KmrMandi" />
+        <activity android:name=".D_Masuk_KmrMandi" />
+        <activity android:name=".D_Lupa_Doa_Makan" />
+        <activity android:name=".D_Sesudah_Makan" />
+        <activity android:name=".Game_Quiz" />
+        <activity android:name=".D_Sebelum_Makan" />
+        <activity android:name=".Menu_Doa_Harian" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
